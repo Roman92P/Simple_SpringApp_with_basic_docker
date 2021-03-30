@@ -1,0 +1,4 @@
+FROM openjdk:8-jdk-alpine
+ADD target/demo-dockerApp-30.03.2021-0.0.1-SNAPSHOT.jar .
+EXPOSE 7000
+CMD java -jar demo-dockerApp-30.03.2021-0.0.1-SNAPSHOT.jar --envname=test
